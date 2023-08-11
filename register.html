@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+<title>Register Page</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.register-page {
+    padding:50px;
+    background-image:url("https://tse2.mm.bing.net/th?id=OIP.880NrUEXDIq2yN_oePPgXAHaEK&pid=Api&P=0&h=180");
+    background-size:cover;
+    width:100vw;
+    color:white;
+    font-family:"Roboto";
+height:100vh;
+}
+.login1 {
+    margin-top:10px;
+    margin-bottom:30px;
+    font-weight:bold;
+
+}
+.login-button {
+    border-radius:10px;
+    background-color: transparent;
+    color:white;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-color:white;
+    padding-left:10px;
+    padding-right:10px;
+}
+.loginUsername{
+    padding-right:10px;
+}
+    </style>
+</head>
+<body>
+
+<div class = "register-page">
+<h2>Register</h2>
+
+<form action="/register" method="post">
+    <div>
+        <label for="registerUsername" class = "loginUsername">Username:</label>
+        <input type="text" id="registerUsername" placeholder="UserName"   name="registerUsername" required>
+    </div>
+    <div class="mb-3">
+        <label for="emailid" class="form-label loginUsername">Email</label>
+        <input type="email" class="form-control" id="emailid" placeholder="abc@gmail" name="emailid" required>
+    </div>
+    <div>
+        <label for="DOB" class = "loginUsername">Date of Brith</label>
+        <input type="date" id="DOB" required>
+    </div>
+    <div>
+        <label class = "loginUsername">Gender :</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">Female
+    </div>
+    <div>
+        <label class = "loginUsername" for="registerPassword">Password:</label>
+        <input type="password" id="registerPassword" placeholder="*****"     name="registerPassword" required>
+    </div>
+    
+    <div>
+        <label class = "loginUsername" for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <div>
+        <button type="submit" class = "login-button">Register</button>
+    </div>
+    <div>
+        <a href = "index.html" class = "login-button">login</a>
+    </div>
+</form>
+</div>
+</body>
+</html>
